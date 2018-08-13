@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CONTAINER_NAME=''
+HOST_DB_PATH=''
 ROOT_PASSWD=''
 REPL_USER=''
 REPL_PASSWD=''
