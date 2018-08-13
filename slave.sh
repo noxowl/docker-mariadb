@@ -4,7 +4,7 @@ ROOT_PASSWD=''
 REPL_USER=''
 REPL_PASSWD=''
 
-docker run --name mariadb-slave --link mariadb-master:master \
+docker run -d --name mariadb-slave --link mariadb-master:master \
   -e MARIADB_REPLICATION_MODE=slave \
   -e MARIADB_REPLICATION_USER="${REPL_USER}" \
   -e MARIADB_REPLICATION_PASSWORD="${REPL_PASSWD}" \
