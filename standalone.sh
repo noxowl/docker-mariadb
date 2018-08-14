@@ -14,4 +14,5 @@ docker run -d --name "${CONTAINER_NAME}" \
   -e MARIADB_USER="${DB_USER}" \
   -e MARIADB_PASSWORD="${DB_PASSWD}" \
   -e MARIADB_DATABASE="${DB_NAME}" \
+  --restart unless-stopped \
   bitnami/mariadb:latest

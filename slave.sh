@@ -12,4 +12,5 @@ docker run -d --name "${CONTAINER_NAME}" --link "${MASTER_CONTAINER_NAME}":maste
   -e MARIADB_REPLICATION_PASSWORD="${REPL_PASSWD}" \
   -e MARIADB_MASTER_HOST=master \
   -e MARIADB_MASTER_ROOT_PASSWORD="${ROOT_PASSWD}" \
+  --restart unless-stopped \
   bitnami/mariadb:latest
